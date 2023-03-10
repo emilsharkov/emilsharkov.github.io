@@ -24,6 +24,26 @@ body {
     padding: 1.5rem 0 1.5rem 1.5rem;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: .75rem;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(163, 161, 161);
+    border-radius: .5rem;
+}
+
+.logo {
+    align-self: center;
+    margin-left: 1rem;
+}
+
 .navbar-name {
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -56,6 +76,15 @@ body {
     max-height: 0;
 }
 
+.menu-items-inactive {
+    pointer-events: none;
+}
+
+.menu-break-inactive {
+    z-index: -1;
+    position: absolute;
+}
+
 .menu-container-active {
     opacity: 0;
 }
@@ -75,8 +104,8 @@ body {
 .home {
     background-image: url("images/page\ background.jpg");
     background-size: cover;
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +116,7 @@ body {
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--main-color);
     text-align: center;
 }
@@ -434,7 +463,7 @@ body {
         max-height: 500px;
         flex-direction: column;
         opacity: 1;
-        transition: max-height 1.5s ease-out;
+        transition: max-height 1.5s ease-out, opacity 1s;
     }
 
     .menu-items-active {
@@ -480,6 +509,12 @@ body {
 
     .menu-break-inactive {
         visibility: hidden;
+        z-index: 0;
+        position: static;
+    }
+
+    .intro-title {
+        font-size: 3rem;
     }
 
     .project-item {
@@ -569,7 +604,7 @@ body {
         max-height: 500px;
         flex-direction: column;
         opacity: 1;
-        transition: max-height 1s ease-out;
+        transition: max-height 1s ease-out, opacity 1s;
     }
 
     .menu-items-active {
@@ -615,6 +650,8 @@ body {
 
     .menu-break-inactive {
         visibility: hidden;
+        z-index: 0;
+        position: static;
     }
 
     .skills-container {

@@ -8,7 +8,7 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emil Sharkov</title>
-        <link rel="icon" href="images/trakaworkouts.jpg">
+        <link rel="icon" href="images/shark-icon.png">
         <link rel="stylesheet" href="styles.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Secular+One&family=Source+Sans+Pro:wght@700&display=swap');
@@ -27,22 +27,22 @@
                 <hr class="menu-break-inactive">
                 <a class='menu-items-inactive' id="menu-item" href="#contact-me">Contact Me</a>
                 <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" target="_blank" href="./Emil_Sharkov_Resume.pdf">Resume</a>
+                <a class='menu-items-inactive' id="menu-item" target="_blank" href="./media/Emil_Sharkov_Resume.pdf">Resume</a>
                 <hr class="menu-break-inactive">
             </nav>
             <div class="navbar-container">
-                <p class="navbar-name navbar-text">EMIL SHARKOV</p>
                 <!-- navbar -->
+                <img class="logo" width="151" height="31" src="./images/emil-sharkov-logo1.png">
                 <nav class="navbar">
-                        <a class="nav-element navbar-text" href="#about-me">About</a>
-                        <a class="nav-element navbar-text" href="#experience">Experience</a>
-                        <a class="nav-element navbar-text" href="#personal-projects">Personal Projects</a>
-                        <a class="nav-element navbar-text" href="#skills">Skills</a>
-                        <a class="nav-element navbar-text" href="#tools">Tools</a>
-                        <a class="nav-element navbar-text" target="_blank" href="./Emil_Sharkov_Resume.pdf">Resume</a>
-                        <button id="hamburger-menu" class="nav-element hamburger-menu">
-                            <img class="hamburger-icon" src="./images/hamburger-menu.png"/>
-                        </button>
+                    <a class="nav-element navbar-text" href="#about-me">About</a>
+                    <a class="nav-element navbar-text" href="#experience">Experience</a>
+                    <a class="nav-element navbar-text" href="#personal-projects">Personal Projects</a>
+                    <a class="nav-element navbar-text" href="#skills">Skills</a>
+                    <a class="nav-element navbar-text" href="#tools">Tools</a>
+                    <a class="nav-element navbar-text" target="_blank" href="./media/Emil_Sharkov_Resume.pdf">Resume</a>
+                    <button id="hamburger-menu" class="nav-element hamburger-menu">
+                        <img class="hamburger-icon" src="./images/hamburger-menu.png"/>
+                    </button>
                 </nav>
             </div>       
         </header>
@@ -65,7 +65,7 @@
                     <a href="mailto:emosharkov@gmail.com" class="link-icons"><img alt="Email" src="images/email.svg" width="50" height="50"/></a>
                     <a target="_blank" href="https://www.github.com/emilsharkov" class="link-icons"><img alt="Github" src="images/github.svg" width="50" height="50"/></a>
                     <a target="_blank" href="https://www.linkedin.com/in/emil-sharkov/" class="link-icons"><img alt="LinkedIn" src="images/linkedin.svg" width="50" height="50"/></a>
-                    <a target="_blank" href="./Emil_Sharkov_Resume.pdf">
+                    <a target="_blank" href=".media/Emil_Sharkov_Resume.pdf">
                         <button class="resume-button">RESUME</button>
                     </a>
                 </div>
@@ -266,7 +266,7 @@
                 </div>
             </section>
             <script type="module">
-                import { bindHamburgerMenu } from './navbar.js'
+                import { bindHamburgerMenu } from './scripts/navbar.js'
                 bindHamburgerMenu()
             </script>
             <script>
