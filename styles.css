@@ -248,7 +248,7 @@ body {
     padding-left: 1rem;
 }
 
-#skills-tools {
+.skills-tools {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,8 +520,8 @@ body {
     }
 
     .submit-button {
-        height: 12vw;
-        width: 45vw;
+        height: 3rem;
+        width: 12rem;
     }
 
     #googleMap {
@@ -618,7 +618,7 @@ body {
     }
 
     .skills-container {
-        width: 70vw;
+        width: 90vw;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -638,9 +638,4 @@ body {
         width: 60vw !important;
         height: 50vw !important;
     }
-}
-
-/* desktop */
-@media only screen and (min-width: 1200px) {
-
 }
