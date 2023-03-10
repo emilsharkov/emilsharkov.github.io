@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Emil Sharkov Portfolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emil Sharkov</title>
+        <link rel="icon" href="images/trakaworkouts.jpg">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Secular+One&family=Source+Sans+Pro:wght@700&display=swap');
+        </style> 
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="menu-container" class="menu-container-inactive">
+                <a class='menu-items-inactive' id="menu-item" href="#about-me">About</a>
+                <hr class="menu-break-inactive">
+                <a class='menu-items-inactive' id="menu-item" href="#experience">Experience</a>
+                <hr class="menu-break-inactive">
+                <a class='menu-items-inactive' id="menu-item" href="#personal-projects">Personal Projects</a>
+                <hr class="menu-break-inactive">
+                <a class='menu-items-inactive' id="menu-item" href="#contact-me">Contact Me</a>
+                <hr class="menu-break-inactive">
+                <a class='menu-items-inactive' id="menu-item" target="_blank" href="./Emil_Sharkov_Resume.pdf">Resume</a>
+                <hr class="menu-break-inactive">
+            </nav>
+            <div class="navbar-container">
+                <p class="navbar-name navbar-text">EMIL SHARKOV</p>
+                <!-- navbar -->
+                <nav class="navbar">
+                        <a class="nav-element navbar-text" href="#about-me">About</a>
+                        <a class="nav-element navbar-text" href="#experience">Experience</a>
+                        <a class="nav-element navbar-text" href="#personal-projects">Personal Projects</a>
+                        <a class="nav-element navbar-text" href="#contact-me">Contact Me</a>
+                        <a class="nav-element navbar-text" target="_blank" href="./Emil_Sharkov_Resume.pdf">Resume</a>
+                        <button id="hamburger-menu" class="nav-element hamburger-menu">
+                            <img class="hamburger-icon" src="./images/hamburger-menu.png"/>
+                        </button>
+                </nav>
+            </div>       
+        </header>
+
+        <main>
+            <!-- introduction when page opens -->
+            <section class="home">
+                <h1 class="intro-title">HELLO THERE!</h1>
+                <h1 class="intro-title">MY NAME IS EMIL SHARKOV</h1>
+                <p class="intro-note">I'm a software developer specializing in back end development. </p>
+                <a href="#personal-projects">
+                    <button class="intro-projects-button">PROJECTS</button>
+                </a>
+            </section> 
+
+            <!-- About Me -->
+            <section id='about-me' class="about-me">
+                <h2 class="about-me-title">About Me</h2>
+                <div class="links-container">
+                    <a href="mailto:emosharkov@gmail.com" class="link-icons"><img alt="Email" src="images/email.svg" width="50" height="50"/></a>
+                    <a target="_blank" href="https://www.github.com/emilsharkov" class="link-icons"><img alt="Github" src="images/github.svg" width="50" height="50"/></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/emil-sharkov/" class="link-icons"><img alt="LinkedIn" src="images/linkedin.svg" width="50" height="50"/></a>
+                    <a target="_blank" href="./Emil_Sharkov_Resume.pdf">
+                        <button class="resume-button">RESUME</button>
+                    </a>
+                </div>
+                <p class="about-me-p">My name is Emil and I am a Computer Science major studying at the University of California San Diego. I worked closely with frontend and backend development at my last two internships at Ardigent Consulting and MakeItHappen. My expertise lies with JavaScript, Node.js, Python, and PostgreSQL and the libraries React.js, Next.js, and Express.js. However, my most recent interests have guided me towards cloud based technologies like AWS, Docker, Terraform, and Tableau.</p>
+                <h3 class="map-title">Where I go to School</h3>
+                <div id="googleMap"></div>
+            </section>
+
+            <!-- Work Experience -->
+            <section id="experience" class="work-experience">
+                <div class="work-experience-container">
+                    <h2 class="work-experience-title">Work Experience</h2>
+
+                    <h3 class="company-name">MakeItHappen</h3>
+                    <b class="work-experience-text">Full Stack Intern</b>
+                    <i class="work-experience-text">June - September 2023</i>
+                    <ul>
+                        <li class="work-experience-text">
+                            Reduced time spent on customer requests by creating internal tool to present statistics on over 20,000 users
+                        </li>
+                        <li class="work-experience-text">
+                            Increased visual appeal and ease of access of customer website by redesigning existing components
+                        </li>
+                        <li class="work-experience-text">
+                            Oversaw fixing client and server side defects to production identified by users of contracted internal tool
+                        </li>
+                        <li class="work-experience-text">
+                            Managed client database maintenance and fetched appropriate data for client requests using SQL queries
+                        </li>
+                    </ul>
+
+                    <h3 class="company-name">Ardigent Consulting</h3>
+                    <b class="work-experience-text">Web Development Intern</b>
+                    <i class="work-experience-text">October - December 2019</i>
+                    <ul>
+                        <li class="work-experience-text">
+                            Increased SEO and Google ranking by integrating React codebase with Next.js to allow for server side rendering                    </li>
+                        <li class="work-experience-text">
+                            Enhanced database security with sanitation procedures inside RESTful APIs to prevent SQL Injection attacks
+                        </li>
+                        <li class="work-experience-text">
+                            Oversaw fixing client and server side defects to production identified by users of contracted internal tool
+                        </li>
+                        <li class="work-experience-text">
+                            Improved accessibility of company website by refactoring landing page by utilizing CEO’s specifications
+                        </li>
+                    </ul>
+                </div>
+                
+            </section>
+
+            <!-- Personal Projects -->
+            <section id="personal-projects" class="project">
+                <h2 class="project-title">Personal Projects</h2>
+                <div class="project-container">
+                    <div class="project-item">
+                        <h4 class="project-item-title project-title">Traka Workouts</h4>
+                        <a target="_blank" href="https://github.com/emilsharkov/Traka">
+                            <img alt="Traka" class="project-links project-image" width="500" src="images/trakaworkouts.jpg"/>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <h4 class="project-item-title project-title">Cookie Clicker Bot</h4>
+                        <a target="_blank" href="https://github.com/emilsharkov/AutomatedCookieClicker">
+                            <img alt="AutomatedCookieClicker" class="project-links project-image" width="500" src="images/cookieclicker.jpg"/>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Skills -->
+            <section id="skills-tools">
+                <h2 class="skills-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/react.svg" alt=""/>
+                        <label class="skill-label">React.js</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80"src="./images/javascript.svg" alt=""/>
+                        <label class="skill-label">JavaScript</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/html.svg" alt=""/>
+                        <label class="skill-label">HTML</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/css.svg" alt=""/>
+                        <label class="skill-label">CSS</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/nodejs.svg" alt=""/>
+                        <label class="skill-label">Node.js</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/express.svg" alt=""/>
+                        <label class="skill-label">Express.js</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/postgresql.svg" alt=""/>
+                        <label class="skill-label">PostgreSQL</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/python.svg" alt=""/>
+                        <label class="skill-label">Python</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/golang.svg" alt=""/>
+                        <label class="skill-label">Go</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/java.svg" alt=""/>
+                        <label class="skill-label">Java</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/kotlin.svg" alt=""/>
+                        <label class="skill-label">Kotlin</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/bash.svg" alt=""/>
+                        <label class="skill-label">Bash</label>
+                    </div>
+                </div>
+
+                <h2 class="skills-title">Tools</h2>
+                <div class="skills-container">
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/github-tool.svg" alt=""/>
+                        <label class="skill-label">Github</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/vscode.svg" alt=""/>
+                        <label class="skill-label">VS Code</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/linux.svg" alt=""/>
+                        <label class="skill-label">Linux</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/docker.svg" alt=""/>
+                        <label class="skill-label">Docker</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/aws.svg" alt=""/>
+                        <label class="skill-label">AWS</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/ec2.svg" alt=""/>
+                        <label class="skill-label">EC2</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/route53.svg" alt=""/>
+                        <label class="skill-label">Route53</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/apigateway.svg" alt=""/>
+                        <label class="skill-label">API Gateway</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/ecs.svg" alt=""/>
+                        <label class="skill-label">ECS</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/lambda.svg" alt=""/>
+                        <label class="skill-label">Lambda</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/tableau.svg" alt=""/>
+                        <label class="skill-label">Tableau</label>
+                    </div>
+                    <div class="skills-item">
+                        <img width="80" height="80" src="./images/s3.svg" alt=""/>
+                        <label class="skill-label">S3</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Me -->
+            <section id="contact-me" class="contact">
+                <div class="contact-container">
+                    <form action="mailto:emosharkov@gmail.com" method="POST" enctype="multipart/form-data" class="contact-form">
+                        <h2 class="contact-title">Contact Me</h2>
+                        <div class="contact-input-container">
+                            <label class="contact-label">Name</label>
+                            <input class="contact-input" name="name" placeholder="Enter Your Name" required>
+                            <label class="contact-label">Email</label>
+                            <input class="contact-input" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="this.setCustomValidity('Enter A Valid Email')" placeholder="Enter Your Email" required>
+                            <label class="contact-label">Subject</label>
+                            <input class="contact-input" name="subject" placeholder="Enter Your Subject" required>
+                            <label class="contact-label">Message</label>
+                            <textarea class="contact-input contact-textarea" placeholder="Enter Your Message" required ></textarea>
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <script type="module">
+                import { bindHamburgerMenu } from './navbar.js'
+                bindHamburgerMenu()
+            </script>
+            <script>
+                function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(32.8801,117.2340),
+                        zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+        </main>
+    </body>
+</html>
