@@ -151,7 +151,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 2rem;
 }
 
 .links-container{
@@ -200,7 +199,7 @@ body {
 .work-experience-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     width: 82%;
     padding-bottom: 2rem;
@@ -208,27 +207,56 @@ body {
 
 .work-experience-title {
     margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-end: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
     padding-top: 3rem;
     color: var(--main-color);
 }
 
-.company-name {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    color: var(--main-color);
+.work-container {
+    font-family: Source Sans Pro, sans-serif;
+    color: black;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    width: 66vw;
 }
 
-.work-experience-text {
+.work-title {
+    font-size: 1.75rem;
+}
+
+.work-title > b{
+    color: rgb(234, 196, 10);
+}
+
+.work-duration {
     font-family: sans-serif;
     font-size: 1.25rem;
-    padding-top: 1rem;
-    color: var(--main-color);
+}
+
+.work-list {
+    list-style: none;
+    padding-inline-start: 0;
+    line-height: 2rem;
+}
+
+.work-list-item {
+    font-family: sans-serif;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(255, 204, 0);
 }
 
 .project {
@@ -277,7 +305,16 @@ body {
     padding-left: 1rem;
 }
 
-.skills-tools {
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.tools {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,6 +363,7 @@ body {
     padding-bottom: 2rem;
     background-color: #fafafa;
     width: 100%;
+    padding-bottom: 6rem;
 }
 
 .contact-title {
@@ -343,7 +381,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .contact-input-container {
@@ -368,6 +406,7 @@ body {
     width: 60vw;
     background-color: white;
     border-radius: 1rem;
+    border: 1px solid lightgray;
 }
 
 .contact-label {
@@ -380,7 +419,7 @@ body {
 
 .contact-input::placeholder {
     color: gray;
-    font-size: small;
+    font-size: 1rem;
 }
 
 .contact-input {
@@ -392,6 +431,7 @@ body {
     border: solid 1px #ddd;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #fafafa;
+    font-size: 1rem;
 }
 
 .contact-textarea {
@@ -399,6 +439,7 @@ body {
     overflow: hidden;
     width: 50vw;
     height: 8vw;
+    font-size: 1rem;
 }
 
 .submit-button {
@@ -415,18 +456,39 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#googleMap {
-    width: 60vw;
-    height: 30vw;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 9vw;
+    background-color: black;
 }
 
-.map-title {
-    margin-block-start: -1.5rem;
-    margin-block-end: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
-    color: var(--main-color);
-    padding-bottom: .5rem;
+.copyright {
+    color: white;
+    font-size: 1rem;
+    font-family: Source Sans Pro, sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.copyright+.footer-links{
+    margin-left: 30vw;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-link-item {
+    filter: invert(1);
+}
+
+.footer-link-item+.footer-link-item{
+    margin-left: 1rem;
 }
 
 /* phone */
@@ -559,9 +621,16 @@ body {
         width: 12rem;
     }
 
-    #googleMap {
-        width: 90vw !important;
-        height: 90vw !important;
+    footer {
+        flex-direction: column-reverse;
+        height: 18vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .copyright+.footer-links{
+        margin-left: 0;
+        margin-bottom: .5rem;
     }
 }
 
@@ -669,10 +738,5 @@ body {
 
     .submit-button {
         height: 6vw
-    }
-
-    #googleMap {
-        width: 60vw !important;
-        height: 50vw !important;
     }
 }

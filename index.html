@@ -65,13 +65,11 @@
                     <a href="mailto:emosharkov@gmail.com" class="link-icons"><img alt="Email" src="images/email.svg" width="50" height="50"/></a>
                     <a target="_blank" href="https://www.github.com/emilsharkov" class="link-icons"><img alt="Github" src="images/github.svg" width="50" height="50"/></a>
                     <a target="_blank" href="https://www.linkedin.com/in/emil-sharkov/" class="link-icons"><img alt="LinkedIn" src="images/linkedin.svg" width="50" height="50"/></a>
-                    <a target="_blank" href=".media/Emil_Sharkov_Resume.pdf">
+                    <a target="_blank" href="./media/Emil_Sharkov_Resume.pdf">
                         <button class="resume-button">RESUME</button>
                     </a>
                 </div>
                 <p class="about-me-p">My name is Emil and I am a Computer Science major studying at the University of California San Diego. I worked closely with frontend and backend development at my last two internships at Ardigent Consulting and MakeItHappen. My expertise lies with JavaScript, Node.js, Python, and PostgreSQL and the libraries React.js, Next.js, and Express.js. However, my most recent interests have guided me towards cloud based technologies like AWS, Docker, Terraform, and Tableau.</p>
-                <h3 class="map-title">Where I go to School</h3>
-                <div id="googleMap"></div>
             </section>
 
             <!-- Work Experience -->
@@ -79,40 +77,24 @@
                 <div class="work-experience-container">
                     <h2 class="work-experience-title">Work Experience</h2>
 
-                    <h3 class="company-name">MakeItHappen</h3>
-                    <b class="work-experience-text">Full Stack Intern</b>
-                    <i class="work-experience-text">June - September 2023</i>
-                    <ul>
-                        <li class="work-experience-text">
-                            Reduced time spent on customer requests by creating internal tool to present statistics on over 20,000 users
-                        </li>
-                        <li class="work-experience-text">
-                            Increased visual appeal and ease of access of customer website by redesigning existing components
-                        </li>
-                        <li class="work-experience-text">
-                            Oversaw fixing client and server side defects to production identified by users of contracted internal tool
-                        </li>
-                        <li class="work-experience-text">
-                            Managed client database maintenance and fetched appropriate data for client requests using SQL queries
-                        </li>
-                    </ul>
+                    <work-experience
+                    title="Full Stack Intern"
+                    company="MakeItHappen"
+                    duration="October - December 2019"
+                    descriptions="Reduced time spent on customer requests by creating internal tool to present statistics on over 20,000 users:
+                                  Increased visual appeal and ease of access of customer website by redesigning existing components:
+                                  Oversaw fixing client and server side defects to production identified by users of contracted internal tool:
+                                  Managed client database maintenance and fetched appropriate data for client requests using SQL queries">
+                    </work-experience>
 
-                    <h3 class="company-name">Ardigent Consulting</h3>
-                    <b class="work-experience-text">Web Development Intern</b>
-                    <i class="work-experience-text">October - December 2019</i>
-                    <ul>
-                        <li class="work-experience-text">
-                            Increased SEO and Google ranking by integrating React codebase with Next.js to allow for server side rendering                    </li>
-                        <li class="work-experience-text">
-                            Enhanced database security with sanitation procedures inside RESTful APIs to prevent SQL Injection attacks
-                        </li>
-                        <li class="work-experience-text">
-                            Oversaw fixing client and server side defects to production identified by users of contracted internal tool
-                        </li>
-                        <li class="work-experience-text">
-                            Improved accessibility of company website by refactoring landing page by utilizing CEO’s specifications
-                        </li>
-                    </ul>
+                    <work-experience
+                        title="Web Development Intern"
+                        company="Ardigent Consulting"
+                        duration="October - December 2019"
+                        descriptions="Increased SEO and Google ranking by integrating React codebase with Next.js to allow for server side rendering:
+                                      Enhanced database security with sanitation procedures inside RESTful APIs to prevent SQL Injection attacks:
+                                      Improved accessibility of company website by refactoring landing page by utilizing CEO’s specifications">
+                    </work-experience>
                 </div>
                 
             </section>
@@ -138,111 +120,39 @@
             </section>
 
             <!-- Skills -->
-            <section class="skills-tools" id="skills">
+            <section class="skills" id="skills">
                 <h2 class="skills-title">Skills</h2>
                 <div class="skills-container">
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/react.svg" alt=""/>
-                        <label class="skill-label">React.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80"src="./images/javascript.svg" alt=""/>
-                        <label class="skill-label">JavaScript</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/html.svg" alt=""/>
-                        <label class="skill-label">HTML</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/css.svg" alt=""/>
-                        <label class="skill-label">CSS</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/nodejs.svg" alt=""/>
-                        <label class="skill-label">Node.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/express.svg" alt=""/>
-                        <label class="skill-label">Express.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/postgresql.svg" alt=""/>
-                        <label class="skill-label">PostgreSQL</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/python.svg" alt=""/>
-                        <label class="skill-label">Python</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/golang.svg" alt=""/>
-                        <label class="skill-label">Go</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/java.svg" alt=""/>
-                        <label class="skill-label">Java</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/kotlin.svg" alt=""/>
-                        <label class="skill-label">Kotlin</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/bash.svg" alt=""/>
-                        <label class="skill-label">Bash</label>
-                    </div>
+                    <skill-item label="React.js" src="./images/react.svg"></skill-item>
+                    <skill-item label="JavaScript" src="./images/javascript.svg"></skill-item>
+                    <skill-item label="HTML" src="./images/html.svg"></skill-item>
+                    <skill-item label="CSS" src="./images/css.svg"></skill-item>
+                    <skill-item label="Node.js" src="./images/nodejs.svg"></skill-item>
+                    <skill-item label="Express.js" src="./images/express.svg"></skill-item>
+                    <skill-item label="PostgreSQL" src="./images/postgresql.svg"></skill-item>
+                    <skill-item label="Python" src="./images/python.svg"></skill-item>
+                    <skill-item label="Go" src="./images/golang.svg"></skill-item>
+                    <skill-item label="Bash" src="./images/bash.svg"></skill-item>
+                    <skill-item label="Java" src="./images/java.svg" width="60"></skill-item>
+                    <skill-item label="Kotlin" src="./images/kotlin.svg"></skill-item>
                 </div>
             </section>
 
-            <section class="skills-tools" id="tools">
+            <section class="tools" id="tools">
                 <h2 class="skills-title">Tools</h2>
                 <div class="skills-container">
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/github-tool.svg" alt=""/>
-                        <label class="skill-label">Github</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/vscode.svg" alt=""/>
-                        <label class="skill-label">VS Code</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/linux.svg" alt=""/>
-                        <label class="skill-label">Linux</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/docker.svg" alt=""/>
-                        <label class="skill-label">Docker</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/aws.svg" alt=""/>
-                        <label class="skill-label">AWS</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/ec2.svg" alt=""/>
-                        <label class="skill-label">EC2</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/route53.svg" alt=""/>
-                        <label class="skill-label">Route53</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/apigateway.svg" alt=""/>
-                        <label class="skill-label">API Gateway</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/ecs.svg" alt=""/>
-                        <label class="skill-label">ECS</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/lambda.svg" alt=""/>
-                        <label class="skill-label">Lambda</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/tableau.svg" alt=""/>
-                        <label class="skill-label">Tableau</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/s3.svg" alt=""/>
-                        <label class="skill-label">S3</label>
-                    </div>
+                    <skill-item label="Github" src="./images/github-tool.svg"></skill-item>
+                    <skill-item label="VS Code" src="./images/vscode.svg"></skill-item>
+                    <skill-item label="Linux" src="./images/linux.svg"></skill-item>
+                    <skill-item label="Docker" src="./images/docker.svg"></skill-item>
+                    <skill-item label="AWS" src="./images/aws.svg"></skill-item>
+                    <skill-item label="EC2" src="./images/ec2.svg"></skill-item>
+                    <skill-item label="Route53" src="./images/route53.svg"></skill-item>
+                    <skill-item label="API Gateway" src="./images/apigateway.svg"></skill-item>
+                    <skill-item label="ECS" src="./images/ecs.svg"></skill-item>
+                    <skill-item label="Lambda" src="./images/lambda.svg"></skill-item>
+                    <skill-item label="Tableau" src="./images/tableau.svg"></skill-item>
+                    <skill-item label="S3" src="./images/s3.svg"></skill-item>
                 </div>
             </section>
 
@@ -267,18 +177,20 @@
             </section>
             <script type="module">
                 import { bindHamburgerMenu } from './scripts/navbar.js'
+                import './scripts/skill.js'
+                import './scripts/work.js'
                 bindHamburgerMenu()
             </script>
-            <script>
-                function myMap() {
-                    var mapProp= {
-                        center:new google.maps.LatLng(32.8801,117.2340),
-                        zoom:5,
-                    };
-                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
         </main>
+        <footer>
+            <p class="copyright">
+                © Copyright <script>document.write(new Date().getFullYear())</script> Emil Sharkov
+            </p>
+            <div class="footer-links">
+                <a href="mailto:emosharkov@gmail.com" class="footer-link-item"><img alt="Email" src="images/email.svg" width="30" height="30"/></a>
+                <a target="_blank" href="https://www.github.com/emilsharkov" class="footer-link-item"><img alt="Github" src="images/github.svg" width="30" height="30"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/emil-sharkov/" class="footer-link-item"><img alt="LinkedIn" src="images/linkedin.svg" width="30" height="30"/></a>
+            </div>
+        </footer>
     </body>
 </html>
