@@ -112,7 +112,16 @@ body {
     flex-direction: column;
 }
 
-.intro-title {
+.intro-title-greeting {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.intro-title-name {
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -151,12 +160,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 3rem;
 }
 
 .links-container{
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
+    gap: 0.1rem;
 }
 
 .resume-button {
@@ -174,7 +185,7 @@ body {
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-top: 3rem;
     color: var(--main-color);
 }
@@ -194,7 +205,7 @@ body {
     align-items: center;
     width: 100%;
     background-color: #fefefe;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
     padding-top: 4rem;
 }
 
@@ -209,9 +220,9 @@ body {
 
 .work-experience-title {
     margin-block-start: 0em;
-    margin-block-end: 2rem;
+    margin-block-end: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-top: 3rem;
     color: var(--main-color);
 }
@@ -219,10 +230,10 @@ body {
 .work-container {
     font-family: Source Sans Pro, sans-serif;
     color: black;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     background-color: white;
     border: 1px solid lightgray;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     border-radius: .5rem;
     width: 66vw;
     box-shadow: rgb(0 0 0 / 20%) 0px 10px 30px -15px;
@@ -269,14 +280,14 @@ li::before {
     align-items: center;
     background-color: #fafafa;
     width: 100%;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
 }
 
 .project-title {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: 3rem;
+    margin-block-end: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--main-color);
@@ -287,17 +298,18 @@ li::before {
     border-radius: 0.5rem;
     border: 1px solid #ddd;
     font-family: Source Sans Pro, sans-serif;
-    max-width: 400px;
+    max-width: 500px;
     background-color: white;
     box-shadow: rgb(0 0 0 / 20%) 0px 10px 30px -15px;
+    transition: transform 1s;
 }
 
-project-item + project-item{
-    margin-left: 1rem;
+.project-item:hover {
+    transform: scale(1.05)
 }
 
 .project-item-image {
-    width: 400px;
+    width: 500px;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -320,6 +332,7 @@ project-item + project-item{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-gap: 3rem;
 }
 
 .skills {
@@ -338,15 +351,16 @@ project-item + project-item{
     align-items: center;
     background-color: white;
     width: 100%;
+    padding-bottom: 6rem;
 }
 
 .skills-title {
     margin-block-start: 0em;
     margin-block-end: 3rem;
     font-family: Source Sans Pro, sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 900;
-    padding-top: 3rem;
+    padding-top: 5rem;
     color: var(--main-color);
 }
 
@@ -377,6 +391,7 @@ project-item + project-item{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: #fafafa;
     width: 100%;
@@ -387,7 +402,7 @@ project-item + project-item{
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-family: Source Sans Pro, sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 900;
     padding-top: 3rem;
     color: var(--main-color);
@@ -597,17 +612,9 @@ footer {
         font-size: 3rem;
     }
 
-    .project-item {
-        padding-left: 0rem;
-    }
-
     .about-me-p {
         padding: 1rem 1rem 1rem 1rem;
     }
-
-    .project-image{
-        width: 90vw;
-    }   
 
     .work-experience {
         padding-left: 0;
@@ -618,9 +625,21 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
-    project-item + project-item{
-        margin-bottom: 1rem;
-        margin-left: 0rem;
+    .project-item-image {
+        width: 300px;
+    }
+
+    .project-item {
+        max-width: 300px;
+    }
+
+    .project-item-title {
+        padding-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .project-item-description {
+        padding-left: 1rem;
     }
 
     .skills-container {
@@ -662,11 +681,6 @@ footer {
     .project-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-    }
-
-    project-item + project-item{
-        margin-bottom: 1rem;
-        margin-left: 0rem;
     }
 
     .navbar-container {
