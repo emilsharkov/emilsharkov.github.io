@@ -13,7 +13,6 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Secular+One&family=Source+Sans+Pro:wght@700&display=swap');
         </style> 
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     </head>
 
     <body>
@@ -32,7 +31,7 @@
             </nav>
             <div class="navbar-container">
                 <!-- navbar -->
-                <img class="logo" width="151" height="31" src="./images/emil-sharkov-logo1.png">
+                <img class="logo" width="151" height="31" src="./images/emil-sharkov-logo.png">
                 <nav class="navbar">
                     <a class="nav-element navbar-text" href="#about-me">About</a>
                     <a class="nav-element navbar-text" href="#experience">Experience</a>
@@ -84,7 +83,8 @@
                     descriptions="Reduced time spent on customer requests by creating internal tool to present statistics on over 20,000 users:
                                   Increased visual appeal and ease of access of customer website by redesigning existing components:
                                   Oversaw fixing client and server side defects to production identified by users of contracted internal tool:
-                                  Managed client database maintenance and fetched appropriate data for client requests using SQL queries">
+                                  Managed client database maintenance and fetched appropriate data for client requests using SQL queries"
+                    >
                     </work-experience>
 
                     <work-experience
@@ -93,7 +93,8 @@
                         duration="October - December 2019"
                         descriptions="Increased SEO and Google ranking by integrating React codebase with Next.js to allow for server side rendering:
                                       Enhanced database security with sanitation procedures inside RESTful APIs to prevent SQL Injection attacks:
-                                      Improved accessibility of company website by refactoring landing page by utilizing CEO’s specifications">
+                                      Improved accessibility of company website by refactoring landing page by utilizing CEO’s specifications"
+                    >
                     </work-experience>
                 </div>
                 
@@ -103,18 +104,34 @@
             <section id="personal-projects" class="project">
                 <h2 class="project-title">Personal Projects</h2>
                 <div class="project-container">
-                    <div class="project-item">
+                    <project-item
+                        href="https://github.com/emilsharkov/Traka"
+                        src="images/trakaworkouts.jpg"
+                        alt="Traka"
+                        title="Traka"
+                        description="Workout Web App"
+                    >
+                    </project-item>
+                    <project-item
+                        href="https://github.com/emilsharkov/Traka"
+                        src="images/trakaworkouts.jpg"
+                        alt="Traka"
+                        title="Traka"
+                        description="Workout Web App"
+                    >
+                    </project-item>
+                    <!-- <div class="project-item">
                         <h4 class="project-item-title project-title">Traka Workouts</h4>
                         <a target="_blank" href="https://github.com/emilsharkov/Traka">
                             <img alt="Traka" class="project-links project-image" width="500" src="images/trakaworkouts.jpg"/>
                         </a>
-                    </div>
-                    <div class="project-item">
+                    </div> -->
+                    <!-- <div class="project-item">
                         <h4 class="project-item-title project-title">Cookie Clicker Bot</h4>
                         <a target="_blank" href="https://github.com/emilsharkov/AutomatedCookieClicker">
                             <img alt="AutomatedCookieClicker" class="project-links project-image" width="500" src="images/cookieclicker.jpg"/>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 
             </section>
@@ -179,6 +196,7 @@
                 import { bindHamburgerMenu } from './scripts/navbar.js'
                 import './scripts/skill.js'
                 import './scripts/work.js'
+                import './scripts/project.js'
                 bindHamburgerMenu()
             </script>
         </main>

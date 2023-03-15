@@ -1,48 +1,54 @@
-            {/* <div class="skills-item">
-                        <img width="80" height="80" src="./images/react.svg" alt=""/>
-                        <label class="skill-label">React.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80"src="./images/javascript.svg" alt=""/>
-                        <label class="skill-label">JavaScript</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/html.svg" alt=""/>
-                        <label class="skill-label">HTML</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/css.svg" alt=""/>
-                        <label class="skill-label">CSS</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/nodejs.svg" alt=""/>
-                        <label class="skill-label">Node.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/express.svg" alt=""/>
-                        <label class="skill-label">Express.js</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/postgresql.svg" alt=""/>
-                        <label class="skill-label">PostgreSQL</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/python.svg" alt=""/>
-                        <label class="skill-label">Python</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/golang.svg" alt=""/>
-                        <label class="skill-label">Go</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/java.svg" alt=""/>
-                        <label class="skill-label">Java</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/kotlin.svg" alt=""/>
-                        <label class="skill-label">Kotlin</label>
-                    </div>
-                    <div class="skills-item">
-                        <img width="80" height="80" src="./images/bash.svg" alt=""/>
-                        <label class="skill-label">Bash</label>
-                    </div> */}
+const projectTemplate = document.createElement('template')
+projectTemplate.innerHTML = `
+    <style>@import 'styles.css'</style>
+    <div class="project-item">
+        <a target="_blank">
+            <img class="project-item-image" width="500"/>
+        </a>
+        <h3 class="project-item-title"></h3>
+        <h4 class="project-item-description"></h4>
+    </div>
+`
+class Project extends HTMLElement {
+    constructor() {
+        super()
+        this._shadowRoot = this.attachShadow({ 'mode': 'open' })
+        this._shadowRoot.appendChild(projectTemplate.content.cloneNode(true))
+    }
+
+    get href() {
+        return this.getAttribute('href')
+    }
+
+    get src() {
+        return this.getAttribute('src')
+    }
+
+    get alt() {
+        return this.getAttribute('alt')
+    }
+
+    get title() {
+        return this.getAttribute('title')
+    }
+
+    get description() {
+        return this.getAttribute('description')
+    }
+
+    connectedCallback() {
+        const link = this._shadowRoot.querySelector('a')
+        const image = this._shadowRoot.querySelector('img')
+        const title = this._shadowRoot.querySelector('h3')
+        const description = this._shadowRoot.querySelector('h4')
+        console.log(description)
+    
+        link.setAttribute('href',this.href)
+        image.setAttribute('src',this.src)
+        image.setAttribute('alt',this.alt)
+        title.innerHTML = this.title
+        description.innerHTML = this.description
+    }
+}
+
+window.customElements.define('project-item',Project)
