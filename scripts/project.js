@@ -1,13 +1,13 @@
 const projectTemplate = document.createElement('template')
 projectTemplate.innerHTML = `
     <style>@import 'styles.css'</style>
-    <div class="project-item">
-        <a target="_blank">
+    <a class="project-item-link" target="_blank">
+        <div class="project-item">
             <img class="project-item-image" width="500"/>
-        </a>
-        <h3 class="project-item-title"></h3>
-        <h4 class="project-item-description"></h4>
-    </div>
+            <h3 class="project-item-title"></h3>
+            <h4 class="project-item-description"></h4>
+        </div>
+    </a>
 `
 class Project extends HTMLElement {
     constructor() {
@@ -38,7 +38,7 @@ class Project extends HTMLElement {
 
     connectedCallback() {
         const link = this._shadowRoot.querySelector('a')
-        const image = this._shadowRoot.querySelector('img')
+        const image = this._shadowRoot.querySelector('.project-item-image')
         const title = this._shadowRoot.querySelector('h3')
         const description = this._shadowRoot.querySelector('h4')
         console.log(description)

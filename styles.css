@@ -308,6 +308,10 @@ li::before {
     transform: scale(1.05)
 }
 
+.project-item-link {
+    text-decoration: none;
+}
+
 .project-item-image {
     width: 500px;
     border-radius: 0.5rem 0.5rem 0 0;
