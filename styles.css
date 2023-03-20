@@ -87,6 +87,7 @@ body {
 
 .menu-container-active {
     opacity: 0;
+    max-height: 0;
 }
 
 .nav-element:hover {
@@ -559,7 +560,7 @@ footer {
     }
 
     .menu-container-active {
-        max-height: 500px;
+        max-height: 600px;
         flex-direction: column;
         opacity: 1;
         transition: max-height 1.5s ease-out, opacity 1s;
@@ -716,7 +717,7 @@ footer {
     }
 
     .menu-container-active {
-        max-height: 500px;
+        max-height: 600px;
         flex-direction: column;
         opacity: 1;
         transition: max-height 1s ease-out, opacity 1s;
@@ -727,7 +728,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 9vw;
+        height: 7vw;
         color: #353935;
         text-decoration: none;
         font-family: 'Source Sans Pro', sans-serif;
@@ -784,5 +785,12 @@ footer {
 
     .submit-button {
         height: 6vw
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1075px) {
+    .nav-element {
+        font-size: .9rem;
+        padding-right: 1.5rem;
     }
 }
