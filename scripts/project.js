@@ -41,7 +41,6 @@ class Project extends HTMLElement {
         const image = this._shadowRoot.querySelector('.project-item-image')
         const title = this._shadowRoot.querySelector('h3')
         const description = this._shadowRoot.querySelector('h4')
-        console.log(description)
     
         link.setAttribute('href',this.href)
         image.setAttribute('src',this.src)
