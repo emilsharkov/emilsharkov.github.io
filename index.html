@@ -211,28 +211,30 @@
             <!-- Contact Me -->
             <section id="contact-me" class="contact">
                 <div class="contact-container">
-                    <form action="mailto:emosharkov@gmail.com" method="POST" enctype="multipart/form-data" class="contact-form">
+                    <form action="https://formspree.io/f/mrgvwyep" method="POST" enctype="multipart/form-data" class="contact-form">
                         <h2 class="contact-title">Contact Me</h2>
                         <div class="contact-input-container">
                             <label class="contact-label">Name</label>
-                            <input class="contact-input" name="name" placeholder="Enter Your Name" required>
+                            <input class="contact-input" name="name" id="contact-input-name" placeholder="Enter Your Name" required>
                             <label class="contact-label">Email</label>
-                            <input class="contact-input" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="this.setCustomValidity('Enter A Valid Email')" placeholder="Enter Your Email" required>
+                            <input class="contact-input" name="email" id="contact-input-email" type="email" placeholder="Enter Your Email" required>
                             <label class="contact-label">Subject</label>
-                            <input class="contact-input" name="subject" placeholder="Enter Your Subject" required>
+                            <input class="contact-input" name="subject" id="contact-input-subject" placeholder="Enter Your Subject" required>
                             <label class="contact-label">Message</label>
-                            <textarea class="contact-input contact-textarea" placeholder="Enter Your Message" required ></textarea>
-                            <button type="submit" class="submit-button">Submit</button>
+                            <textarea class="contact-input contact-textarea" name="message" id="contact-input-message" placeholder="Enter Your Message" required ></textarea>
+                            <button type="submit" class="submit-button" id="contact-me-submit">Submit</button>
                         </div>
                     </form>
                 </div>
             </section>
             <script type="module">
                 import { bindHamburgerMenu } from './scripts/navbar.js'
+                import { bindContactForm } from './scripts/contact.js'
                 import './scripts/skill.js'
                 import './scripts/work.js'
                 import './scripts/project.js'
                 bindHamburgerMenu()
+                bindContactForm()
             </script>
         </main>
         <footer>
