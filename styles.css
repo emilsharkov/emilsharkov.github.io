@@ -504,6 +504,11 @@ li::before {
     font-weight: 700;
     color: var(--main-color);
     font-family: 'Source Sans Pro', sans-serif;
+    transition: .8s;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
 }
 
 footer {
