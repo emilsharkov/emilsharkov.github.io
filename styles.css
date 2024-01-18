@@ -189,7 +189,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
-    gap: 0.1rem;
+    gap: 0.5rem;
 }
 
 .resume-button {
