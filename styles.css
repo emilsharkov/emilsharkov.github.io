@@ -579,7 +579,6 @@ footer {
 
     .intro-container {
         margin-left: 0%;
-        margin-top: 20%;
     }
 
     .intro-my-name-is {
@@ -595,7 +594,7 @@ footer {
     }
 
     .intro-paragraph {
-        width: 380px;
+        width: min(300px, 100%, 100vw);
     }
 
     .hamburger-menu {
@@ -675,6 +674,7 @@ footer {
     .home {
         height: 90vh;
         align-items: center;
+        justify-content: center;
     }
 
     .intro-title-greeting {
@@ -693,6 +693,7 @@ footer {
 
     .about-me-p {
         font-size: 1rem;
+        line-height: 2rem;
         padding: 1rem 2rem 1rem 2rem;
     }
 
@@ -704,6 +705,15 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0.5rem;
+    }
+
+    .work-container {
+        width: auto;
+        padding: 1rem;
+    }
+
+    .work-title {
+        margin: 0.5rem 0 0.5rem 0;
     }
 
     .work-experience {
@@ -792,6 +802,14 @@ footer {
 
     .intro-tagline {
         font-size: 3rem;
+    }
+
+    .work-experience-container {
+        width: 100vw;
+    }
+
+    .work-container {
+        width: 70vw;
     }
 
     .hamburger-menu {
