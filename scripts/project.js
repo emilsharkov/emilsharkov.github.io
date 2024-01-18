@@ -6,6 +6,9 @@ projectTemplate.innerHTML = `
             <img class="project-item-image" width="500"/>
             <h3 class="project-item-title"></h3>
             <h4 class="project-item-description"></h4>
+            <div class="project-languages-container">
+                <slot></slot>
+            </div>
         </div>
     </a>
 `

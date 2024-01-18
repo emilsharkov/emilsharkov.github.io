@@ -363,6 +363,7 @@ li::before {
     padding-left: 2rem;
     font-size: 0.9rem;
     margin-block-start: 0;
+    margin-block-end: 0;
     color: rgb(88, 96, 105);
 }
 
@@ -371,6 +372,21 @@ li::before {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 5rem;
+}
+
+.project-languages-container {
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-language {
+    color: white;
+    display: inline-block;
+    padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 0.25rem;
 }
 
 .skills {
@@ -731,6 +747,10 @@ footer {
 
     .project-item-description {
         padding-left: 1rem;
+    }
+
+    .project-languages-container {
+        padding: 1rem;
     }
 
     .skills-container {
