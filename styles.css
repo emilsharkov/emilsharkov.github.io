@@ -370,7 +370,7 @@ li::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 6rem;
+    grid-gap: 5rem;
 }
 
 .skills {
