@@ -253,7 +253,6 @@ body {
 }
 
 .work-experience-title {
-    margin-block-start: 0em;
     margin-block-end: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.25rem;
@@ -300,8 +299,44 @@ body {
     font-size: 1rem;
 }
 
+.company-selector-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px 10px 30px -15px;
+}
+
+.company-selector {
+    width: calc(100%/3);
+    height: 100%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;    
+    padding: 1.25rem 0 1.25rem 0;
+    transition: transform 2s;
+    color: #353935;
+    cursor: pointer;
+}
+
+.company-selector:hover {
+    color: #f6cc0f;
+    transform: scale(1.05,1.05);
+}
+
+.company-selector-break {
+    margin-block-start: 0.75em;
+    margin-block-end: 0.75rem;
+}
+
 li::before {
     content: "▹";
+    font-size: larger;
     position: absolute;
     left: 0px;
     color: rgb(255, 204, 0);
@@ -381,7 +416,7 @@ li::before {
 }
 
 .project-language {
-    color: white;
+    color: #fafafa;
     display: inline-block;
     padding: 0.15rem 0.5rem 0.15rem 0.5rem;
     margin-right: .5rem;
@@ -725,6 +760,18 @@ footer {
 
     .work-experience {
         padding-left: 0;
+    }
+
+    .company-selector-container {
+        width: 90vw;
+    }
+
+    .company-selector {
+        font-size: 1.1rem;
+    }
+
+    .company-selector-break {
+        display: none;
     }
 
     .project-container {
