@@ -10,7 +10,6 @@
         <title>Emil Sharkov</title>
         <link rel="icon" href="images/shark-icon.png">
         <link rel="stylesheet" href="styles.css">
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Secular+One&family=Source+Sans+Pro:wght@700&display=swap');
         </style> 
@@ -18,43 +17,11 @@
 
     <body>
         <header>
-            <!-- navbar -->
-            <nav id="menu-container" class="menu-container-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#about-me">About</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#experience">Experience</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#personal-projects">Personal Projects</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#skills">Skills</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#tools">Tools</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" href="#contact-me">Contact Me</a>
-                <hr class="menu-break-inactive">
-                <a class='menu-items-inactive' id="menu-item" target="_blank" href="./media/Emil_Sharkov_Resume.pdf">Resume</a>
-                <hr class="menu-break-inactive">
-            </nav>
-
-            <div class="navbar-container">
-                <img class="logo" width="151" height="31" src="./images/emil-sharkov-logo.png">
-                <nav class="navbar">
-                    <a class="nav-element navbar-text" href="#about-me">About</a>
-                    <a class="nav-element navbar-text" href="#experience">Experience</a>
-                    <a class="nav-element navbar-text" href="#personal-projects">Personal Projects</a>
-                    <a class="nav-element navbar-text" href="#skills">Skills</a>
-                    <a class="nav-element navbar-text" href="#tools">Tools</a>
-                    <a class="nav-element navbar-text" href="#contact-me">Contact Me</a>
-                    <a class="nav-element navbar-text" target="_blank" href="./media/Emil_Sharkov_Resume.pdf">Resume</a>
-                    <button id="hamburger-menu" class="nav-element hamburger-menu">
-                        <img class="hamburger-icon" src="./images/hamburger-menu.png"/>
-                    </button>
-                </nav>
-            </div>       
+            <portfolio-navbar></portfolio-navbar>                  
         </header>
 
         <main>
-            <!-- introduction when page opens -->
+            <!-- Intro -->
             <section class="home">
                 <div class="intro-container">
                     <h3 class="intro-my-name-is">Hi, my name is</h3>
@@ -107,7 +74,6 @@
                                             accrued by migrating from OpenShift to EKS:
                                             Decreased triage time by 10% for data discrepancies in flagship product by creating CRUD dashboard that
                                             displays data ingestion metrics with Angular, Spring Boot, and MySQL"
-                        
                         >
                         </work-experience>
 
@@ -285,14 +251,14 @@
                 </div>
             </section>
             <script type="module">
-                import { bindHamburgerMenu } from './scripts/navbar.js'
-                import { bindContactForm } from './scripts/contact.js'
-                import './scripts/skill.js'
+                // order of imports matters
+                import './scripts/navbar.js'
                 import './scripts/work.js'
+                import './scripts/experiences.js'
                 import './scripts/project.js'
                 import './scripts/language.js'
-                import './scripts/experiences.js'
-                bindHamburgerMenu()
+                import './scripts/skill.js'
+                import { bindContactForm } from './scripts/contact.js'
                 bindContactForm()
             </script>
         </main>
