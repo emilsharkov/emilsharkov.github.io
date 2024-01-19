@@ -49,7 +49,7 @@ class Experiences extends HTMLElement {
     showExperience() {
         const slot = this._shadowRoot.querySelector('slot')
         const slotNodes = slot.assignedNodes()
-        console.log(this.selected)
+
         slotNodes.forEach((node,index) => {
             if(node.tagName === 'WORK-EXPERIENCE') {
                 const workContainer = node._shadowRoot.querySelector('.work-container')
