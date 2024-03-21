@@ -72,7 +72,6 @@ class Navbar extends HTMLElement {
 
     connectedCallback() {
         const hamburgerMenu = this._shadowRoot.getElementById('hamburger-menu')
-        console.log(hamburgerMenu)
         hamburgerMenu.addEventListener('click',() => {
             this.displayNavbar = !this.displayNavbar
             this.displayNavbar ? this.generateNavbar(): this.degenerateNavbar()
