@@ -109,7 +109,7 @@ body {
     width: 100vw;
     height: 90vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -120,7 +120,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: 10%;
 }
 
 .intro-my-name-is {
@@ -851,7 +850,7 @@ footer {
 
     .intro-container {
         margin-left: 10%;
-        margin-top: 15%;
+        /* margin-top: 15%; */
     }
 
     .intro-my-name {
